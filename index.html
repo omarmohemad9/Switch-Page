@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Watch Page Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="navbar">
+                <h2>Logo</h2>
+                <h2 class="navicon">☰</h2>
+            </div>
+            <div class="content-hid">
+                <ol>
+                    <li>Home</li>
+                    <li>Portfolio</li>
+                    <li>Service</li>
+                    <li>Login</li>
+                </ol>
+            </div>
+            <div class="content">
+                <div class="left-content">
+                    <h2>FUTURE ON YOUR HAND</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem esse beatae vero? Ducimus maxime temporibus non nihil aut nemo adipisci dolorum repellendus minima doloribus deserunt ipsum, autem vero nesciunt sint!
+                    </p>
+                    <button>Click Here</button>
+                </div>
+                <div class="right-content">
+                    <img src="./image/watch.png" alt="" />
+                </div>
+            </div>
+            <div class="footer">
+                <img src="./image/PNG/facebook.png" alt="" />
+                <img src="./image/PNG/twitch.png" alt="" />
+                <img src="./image/PNG/twitter.png" alt="" />
+                <img src="./image/PNG/instagram.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let section = document.querySelector(".section");
+        let navicon = document.querySelector(".navicon");
+
+        navicon.onclick = function() {
+            section.classList.toggle("active");
+            section.classList.toggle("active-vi");
+        };
+    </script>
+</body>
+
+</html>
